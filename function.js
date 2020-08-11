@@ -1507,7 +1507,7 @@ function noteSelectOne(codigo) {
 function envioWhatsapp(cliente){
 
 
-    let url = "https://api.whatsapp.com/send?phone=51997852483&text=*Sistema *%0A*educativo*%0A%0A*Tengo una duda -*%0A" + cliente;
+    let url = "https://api.whatsapp.com/send?phone=51997852483&text=*Tengo una duda -*%0A" + cliente;
     window.open(url);
 }
 
