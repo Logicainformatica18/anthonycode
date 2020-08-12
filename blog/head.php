@@ -20,7 +20,6 @@
 <!-- Image and text -->
 <nav class="navbar navbar bg-black" style="background-color:black">
   <a class="navbar-brand" href="../index.php">
-    <img src="../dist/img/logo.png" width="30" height="30" class="fa-arrow-circle-left">
     Lógica Informática
   </a>
   <form class="form-inline">
