@@ -154,8 +154,12 @@ class blog extends connection
     // reemplazar espacion por guiones del title
     $page = str_replace(" ", "-", $title);
     $page = str_replace("#", "sharp", $page);
+    //reemplazar comillar por apotrofo
+    $post = str_replace('"', "'", $post);
+    $post='"'.$post.'"';
     //registra los datos del blog
-    $sql = "INSERT INTO blog (personid,title,post,page,description,imageurl,created_at,updated_at) VALUES ('$id','$title','$post','$page','$description','$imageurl',now(),now())";
+    $sql = "INSERT INTO blog (personid,title,post,page,description,imageurl,created_at,updated_at) VALUES ('$id','$title',$post,'$page','$description','$imageurl',now(),now())";
+    echo $sql;
     if (mysqli_query($this->open(), $sql)) {
       $title_post="<!DOCTYPE html>
       <html>
@@ -164,8 +168,7 @@ class blog extends connection
           <meta http-equiv='X-UA-Compatible' content='IE=edge'>
           <meta name='generator' content='Mobirise v4.12.4, mobirise.com'>
           <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1'>
-        
-          <title>$page</title>";
+          <title>$title</title>";
       $php1 = "<?php include ('head.php') ?>";
 $php2 = "<?php include ('footer.php') ?>";
 
@@ -214,15 +217,17 @@ $title = $r["title"];
 $post = $r["post"];
 $imageurl = $r["imageurl"];
 $description = $r["description"];
-echo "<script>
+?>
+<script>
 
 blog.codigo.value = '$codigo';
 blog.title.value = '$title';
 blog.imageurl.value='$imageurl';
 blog.description.value='$description';
-document.getElementById('post').innerHTML='$post';
-</script>";
+document.getElementById('post').innerHTML="<?php echo $post ?>";
+</script>
 
+<?php
 $this->blogSelect();
 }
 
