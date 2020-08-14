@@ -115,12 +115,12 @@ class blog extends connection
                   $title=$row[2];
                   $imageurl=$row[3];
                   $description=$row[4];
-                  echo "  <div class='card' style='width: 14rem; padding-left: 1em;'>
+                  echo "  <div class='card align-left' style='width: 14rem; padding-left: 1em;'>
                             <img src='$imageurl' class='card-img-top' alt='...'>
                               <div class='card-body'>
                                    <h5 class='card-title'><b>$title</b></h5>
                                      <p class='card-text'>$description.</p>
-                                        <a href='blog/$page.php' class='btn btn-success'>ir al blog</a>"; 
+                                        <a href='blog/$page.php' class='btn btn-success'>Leer</a>"; 
                 
                             
                       echo "  
