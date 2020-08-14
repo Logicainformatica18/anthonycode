@@ -159,7 +159,6 @@ class blog extends connection
     $post='"'.$post.'"';
     //registra los datos del blog
     $sql = "INSERT INTO blog (personid,title,post,page,description,imageurl,created_at,updated_at) VALUES ('$id','$title',$post,'$page','$description','$imageurl',now(),now())";
-    echo $sql;
     if (mysqli_query($this->open(), $sql)) {
       $title_post="<!DOCTYPE html>
       <html>
@@ -191,7 +190,8 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>";
 $facebook_compartir = "<div class='fb-like' data-href='$page.php' data-width='' data-layout='button_count'
     data-action='like' data-size='small' data-share='true'></div>";
-
+    
+$post = str_replace('"', "", $post);
 $contenido =$title_post. $php1 . "<h1 class='title_post'>$title</h1>$facebook_compartir <p>$post</p>$disquis" . $php2;
 
 file_put_contents("blog/$page.php", $contenido);
@@ -220,10 +220,10 @@ $description = $r["description"];
 ?>
 <script>
 
-blog.codigo.value = '$codigo';
-blog.title.value = '$title';
-blog.imageurl.value='$imageurl';
-blog.description.value='$description';
+blog.codigo.value = "<?php echo $codigo ?>";
+blog.title.value = "<?php echo $title ?>";
+blog.imageurl.value="<?php echo $imageurl ?>";
+blog.description.value="<?php echo $description ?>";
 document.getElementById('post').innerHTML="<?php echo $post ?>";
 </script>
 
