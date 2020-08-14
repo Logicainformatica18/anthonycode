@@ -1,6 +1,3 @@
-<?php
-include "functionblog.php";
-?>
 <!DOCTYPE html>
 <html>
 
@@ -50,9 +47,9 @@ include "functionblog.php";
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="login.php"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Login</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="course.php"><span class="mobi-mbri mobi-mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link link text-success display-4" href="course.php"><span class="mobi-mbri mobi-mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Cursos</a></li>
                     <li class="nav-item">
-                        <a class="nav-link link text-success display-4" href="blog.php"><span class="socicon socicon-bloglovin mbr-iconfont mbr-iconfont-btn"></span>Blog</a>
+                        <a class="nav-link link text-white display-4" href="blog.php"><span class="socicon socicon-bloglovin mbr-iconfont mbr-iconfont-btn"></span>Blog</a>
                     </li>
                 </ul>
                 <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-info display-4" href="#" onclick="envioWhatsapp('anthonycode')"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn"></span>
@@ -61,6 +58,8 @@ include "functionblog.php";
             </div>
         </nav>
     </section>
+
+
     <section class="mbr-section info3 cid-s7ksMnJa7N" id="info3-3g">
 
 
@@ -88,20 +87,35 @@ include "functionblog.php";
             </div>
         </div>
     </section>
-
     <p></p>
-    <h2 class="align-center mbr-fonts-style m-0
-                                display-1">
-        Blog</h2>
-    <p></p>
+    <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
 
+        <h2 class="align-center mbr-fonts-style m-0 display-1">
+            Cursos</h2>
+        <p></p>
 
-    <div class='container'>
-        <?php
-        $blog->blogSelect2();
-        ?>
+        <div class="container align-center">
+            <p class="mbr-fonts-style m-0 display-6"> Cualquier momento es perfecto para aprender algo nuevo.</p>
+     
       
-    </div>
+            <div class="card" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>Laravel</b></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">ir al Curso</a>
+            </div>
+        </div>
+        </div>
+
+
+
+        
+
+       
+
+    </section>
+
 
 
 
@@ -151,7 +165,6 @@ include "functionblog.php";
                     <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
                         © Copyright 2020 - All Rights Reserved
                     </p>
-
                 </div>
             </div>
         </div>

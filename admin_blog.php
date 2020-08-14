@@ -31,7 +31,13 @@ include "functionblog.php";
                 <!-- /.card-header -->
                 <div class="card-body">
                     <div class="form-group">
-                        <input class="form-control" name="title" placeholder="Título:">
+                        <input class="form-control" name="title" placeholder="Título">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="description" placeholder="Descripción">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="imageurl" placeholder="Imagen Url">
                     </div>
                     <div class="form-group">
                         <textarea name="post" id="compose-textarea" class="form-control">
@@ -72,7 +78,6 @@ include "functionblog.php";
 $blog->blogSelect();
 ?>
 </div>
-
 
 </div><!-- /.container-fluid -->
 </section>

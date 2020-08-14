@@ -12,6 +12,8 @@ $metodo = isset($_POST['metodo']) ? $_POST['metodo'] : "";
 $page = isset($_POST['page']) ? $_POST['page'] : "";
 $page = str_replace(" ", "-", $page);
 $title = isset($_POST['title']) ? $_POST['title'] : "";
+$description = isset($_POST['description']) ? $_POST['description'] : "";
+$imageurl = isset($_POST['imageurl']) ? $_POST['imageurl'] : "";
 $post = isset($_POST['post']) ? $_POST['post'] : "";
 //filtro
 
@@ -23,8 +25,9 @@ class blog extends connection
 
   public function blogSelect()
   {
+    $id=isset($_SESSION["id"])? $_SESSION["id"]:"";
     //consulta todos los empleados
-    $sql = mysqli_query($this->open(), "SELECT * FROM blog;");
+    $sql = mysqli_query($this->open(), "SELECT id,title,page,description FROM blog where personid='$id';");
 ?>
 <!-- Main content -->
 <section class="content">
@@ -45,6 +48,7 @@ class blog extends connection
                                 <tr>
                                     <th>Código</th>
                                     <th>Título</th>
+                                    <th>Descripción</th>
                                     <th>Ver blog</th>
                                     <th>Modificar</th>
                                     <th>Eliminar</th>
@@ -55,10 +59,11 @@ class blog extends connection
                     while ($row = mysqli_fetch_array($sql)) {
                       echo "<tr>";
                       $blogid = $row[0];
-                      $page = str_replace(" ", "-", $row[4]);
+                      $page = str_replace(" ", "-", $row[2]);
                       $page = str_replace("#", "sharp", $page);
                       echo "<td>" .  $blogid . "</td>";
-                      echo "<td>" . $row[2] . "</td>";
+                      echo "<td>" . $row[1] . "</td>";
+                      echo "<td>" . $row[3] . "</td>";
                     ?>
                                 <!-- Button trigger modal -->
                                 <td><a href="blog/<?php echo $page . ".php" ?>" target="_blank"
@@ -70,7 +75,7 @@ class blog extends connection
                                 </td>
                                 <!-- <button class="note-icon-pencil" ></button> -->
                                 <td><button class="btn btn-danger  note-icon-trash"
-                                        onclick="blogDelete('<?php echo $blogid ?>','<?php echo $row[4] ?>');  return false"></button>
+                                        onclick="blogDelete('<?php echo $blogid ?>','<?php echo $row[2] ?>');  return false"></button>
                                 </td>
                                 <?php
                       echo "</tr>";
@@ -91,11 +96,11 @@ class blog extends connection
   public function blogSelect2()
   {
     //consulta todos los empleados
-    $sql = mysqli_query($this->open(), "SELECT id,page FROM blog;");
+    $sql = mysqli_query($this->open(), "SELECT id,page,title,imageurl,description FROM blog;");
   ?>
 <!-- Main content -->
-<section class="content"style='background-color:white'>
-    <div class="container-fluid">
+<section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
+        <div class="container align-center">
         <div class="row">
             
 
@@ -107,16 +112,22 @@ class blog extends connection
                 while ($row = mysqli_fetch_array($sql)) {
                   $page=str_replace(" ","-",$row[1]);
                   $page=str_replace("#","sharp",$row[1]);
-                  echo "<div class='col-md-6 col-sg-12'>
-                          <div class='card'>
-                            <div class='card-body'>
-                              <div class='card-header'>"; 
-                                echo  "<h3 class='card-title'><a target='_blank' href='blog/$page.php'>" .  $row[1] . "</a></h3>";
-                                //  echo "<p class='card-text'>".$row[2]."...</p>"; 
-                      echo "   </div>
-                            </div>
+                  $title=$row[2];
+                  $imageurl=$row[3];
+                  $description=$row[4];
+                  echo "  <div class='card' style='width: 14rem; padding-left: 1em;'>
+                            <img src='$imageurl' class='card-img-top' alt='...'>
+                              <div class='card-body'>
+                                   <h5 class='card-title'><b>$title</b></h5>
+                                     <p class='card-text'>$description.</p>
+                                        <a href='blog/$page.php' class='btn btn-success'>ir al blog</a>"; 
+                
+                            
+                      echo "  
                           </div>
-                        </div>";
+                        </div>
+                       
+                        ";
                 }
                 ?>
 
@@ -138,13 +149,13 @@ class blog extends connection
     }
     $this->blogSelect();
   }
-  public function blogInsert($id,$title, $post)
+  public function blogInsert($id,$title, $post,$imageurl,$description)
   {
     // reemplazar espacion por guiones del title
     $page = str_replace(" ", "-", $title);
     $page = str_replace("#", "sharp", $page);
     //registra los datos del blog
-    $sql = "INSERT INTO blog (personid,title,post,page,created_at,updated_at) VALUES ('$id','$title','$post','$page',now(),now())";
+    $sql = "INSERT INTO blog (personid,title,post,page,description,imageurl,created_at,updated_at) VALUES ('$id','$title','$post','$page','$description','$imageurl',now(),now())";
     if (mysqli_query($this->open(), $sql)) {
       $title_post="<!DOCTYPE html>
       <html>
@@ -201,20 +212,23 @@ $r = mysqli_fetch_assoc($sql);
 $codigo = $r["id"];
 $title = $r["title"];
 $post = $r["post"];
-//$_SESSION["post"]=$post;
+$imageurl = $r["imageurl"];
+$description = $r["description"];
 echo "<script>
 
 blog.codigo.value = '$codigo';
 blog.title.value = '$title';
+blog.imageurl.value='$imageurl';
+blog.description.value='$description';
 document.getElementById('post').innerHTML='$post';
 </script>";
 
 $this->blogSelect();
 }
 
-public function blogUpdate($codigo, $title, $post)
+public function blogUpdate($codigo, $title, $post,$imageurl,$description)
 {
-$sql = "UPDATE blog set title='$title',post='$post'where id='$codigo'";
+$sql = "UPDATE blog set title='$title',post='$post',imageurl='$imageurl',description='$description' where id='$codigo'";
 mysqli_query($this->open(), $sql) or die('Error. ' . mysqli_error($sql));
 echo "<script>
 blog.codigo.value = '$codigo';
@@ -231,11 +245,11 @@ $blog = new blog();
 if ($metodo == "delete") {
 $blog->blogDelete($codigo, $page);
 } elseif ($metodo == "insert") {
-$blog->blogInsert($id,$title, $post);
+$blog->blogInsert($id,$title, $post,$imageurl,$description);
 } elseif ($metodo == "select") {
 $blog->blogSelectOne($codigo);
 } elseif ($metodo == "update") {
-$blog->blogUpdate($codigo, $title, $post);
+$blog->blogUpdate($codigo, $title, $post,$imageurl,$description);
 }
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

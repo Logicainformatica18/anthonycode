@@ -4,9 +4,8 @@
   <!-- Site made with Mobirise Website Builder v5.0.15, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.0.15, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/logo-logicainformatica-photoshop-121x121.png" type="image/x-icon">
   <meta name="description" content="Web Maker Description">
   
   
@@ -51,7 +50,7 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-4" href="login.php"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Login</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="cursos.php"><span class="mobi-mbri mobi-mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Cursos</a></li><li class="nav-item">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-4" href="login.php"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Login</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="course.php"><span class="mobi-mbri mobi-mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Cursos</a></li><li class="nav-item">
                     <a class="nav-link link text-white display-4" href="blog.php"><span class="socicon socicon-bloglovin mbr-iconfont mbr-iconfont-btn"></span>Blog</a>
                 </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-info display-4" href="#" onclick="envioWhatsapp('anthonycode')"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn"></span>

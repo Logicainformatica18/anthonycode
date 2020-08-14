@@ -10,7 +10,7 @@
     <link rel="preload" as="style" href="../assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="../assets/mobirise/css/mbr-additional.css" type="text/css">
 
-
+    <link rel="shortcut icon" href="../assets/images/logo-logicainformatica-photoshop-121x121.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="function.js"></script>
 </head>
@@ -19,8 +19,8 @@
 
 <!-- Image and text -->
 <nav class="navbar navbar bg-black" style="background-color:black">
-  <a class="navbar-brand" href="../index.php">
-    Lógica Informática
+  <a class="navbar-caption text-success display-4" href="../index.php">
+    Anthony Code
   </a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
