@@ -99,9 +99,12 @@
     <p></p>
     <h2 class="align-center mbr-fonts-style m-0 display-1">¿Quién soy?</h2>
     <p> </p>
-    <div class="row container">
-        <div class="col-lg-3">
-            <div class="card" style="width: 14rem;">
+
+    <center>
+    <div class="row container" >
+
+        <div class="col col-lg-2 col-md-3 col-12">
+            <div class="card" style="width: 13rem;">
                 <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
@@ -123,7 +126,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-9">
+       
+        <div class="col col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col col-lg-9 col-md-8 col-12">
             <h5>Technological Skills</h5>
             <style>
                 .red {
@@ -184,10 +189,8 @@
 
         </div>
     </div>
-
-
-
-
+   
+    </center>
 
     <section class="carousel slide testimonials-slider cid-s612cC0AC5" data-interval="false" id="testimonials-slider1-3e">
 
