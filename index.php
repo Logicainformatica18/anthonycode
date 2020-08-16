@@ -96,14 +96,97 @@
         </div>
     </section>
 
-<p></p>
-<h2 class="align-center mbr-fonts-style m-0 display-1">
-            Servicios</h2>
-        <p></p>
+    <p></p>
+    <h2 class="align-center mbr-fonts-style m-0 display-1">¿Quién soy?</h2>
+    <p> </p>
+    <div class="row container">
+        <div class="col-lg-3">
+            <div class="card" style="width: 14rem;">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
+                    <span class="badge badge-warning">Programador web</span>
+                    <span class="badge badge-success">Docente</span>
+                    <div class="container text-center">
+                        <a target="_blank" href="https://github.com/Logicainformatica18">
+                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" width="20px">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/anthony-robert-cardenas-aquino-01a645141/">
+                            <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="" width="20px">
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC13FlAy_27IpJfowhoo73Gg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png" alt="" width="25px">
+                        </a>
+                    </div>
+                    <p class="card-text text-justify">Autodidacta con más de 3 años de experiencia.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <h5>Technological Skills</h5>
+            <style>
+                .red {
+                    background-color: red;
+                }
+
+                .orange {
+                    background-color: rgb(255, 153, 0);
+                }
+
+                .green {
+                    background-color: green;
+                }
+
+                .violet {
+                    background-color: blueviolet;
+                }
+
+                .blue {
+                    background-color: blue;
+                }
+                .black{
+                    background-color: black;
+                }
+            </style>
+            Html5
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">97%</div>
+            </div>
+            Css3
+            <div class="progress">
+                <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            JavaScript Vanilla js
+            <div class="progress">
+                <div class="progress-bar orange progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+            Svc Git
+            <div class="progress">
+                <div class="progress-bar violet progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+            Php Poo
+            <div class="progress">
+                <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
+            </div>
+            Laravel 6
+            <div class="progress">
+                <div class="progress-bar green progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+            React Js
+            <div class="progress">
+                <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+            </div>
+            Mysql - Sql
+            <div class="progress">
+                <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+
+        </div>
+    </div>
 
 
 
-   
 
 
     <section class="carousel slide testimonials-slider cid-s612cC0AC5" data-interval="false" id="testimonials-slider1-3e">
@@ -113,55 +196,15 @@
         <div id="portafolio"></div>
 
         <div class="container text-center">
-            <h2 class="pb-5 mbr-fonts-style display-2">
-                DEVELOPER - TEACHER
-            </h2>
             <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
                 <div class="carousel-inner">
-
-
-                    <div class="carousel-item">
-                        <div class="user col-md-8">
-                            <div class="user_image">
-                                <img src="imagenes/perfil.jpeg">
-                            </div>
-                            <div class="container">
-                                <a target="_blank" href="https://github.com/Logicainformatica18">
-                                    <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" width="20px">
-                                </a>
-                                <a target="_blank" href="https://www.linkedin.com/in/anthony-robert-cardenas-aquino-01a645141/">
-                                    <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="" width="20px">
-                                </a>
-                                <a target="_blank" href="https://www.youtube.com/channel/UC13FlAy_27IpJfowhoo73Gg">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png" alt="" width="25px">
-                                </a>
-                            </div>
-                            <p></p>
-
-                            <div class="user_name mbr-bold pb-2
-                                    mbr-fonts-style display-7">
-                                Anthony Cardenas Aquino</div>
-
-                            <div class="user_text pb-3">
-                                <p class="mbr-fonts-style display-7">
-                                    Programador y Profesor innovador con más
-                                    de 3 años de experiencia dictando y
-                                    desarrollando material de educación
-                                    digital / impreso centrado en el alumno.
-                                </p>
-                            </div>
-                            <div class="user_desk mbr-light mbr-fonts-style
-                                    display-7">
-                                PHP - LARAVEL - GIT - REACT</div>
-                        </div>
-                    </div>
                     <div class="carousel-item">
 
-                        <div class="container">
+                        <div class="container text-center">
                             <h3 class="align-center card-title">EDUCATION</h3>
                             <p></p>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="section-title">
                                         <div class="resume-item">
                                             <h4 style="color:rgb(255, 153,
@@ -177,11 +220,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="section-title">
 
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,30 +298,68 @@
             </div>
     </section>
 
-    <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
 
+
+
+
+
+
+    <p></p>
         <h2 class="align-center mbr-fonts-style m-0 display-1">
             Portafolio</h2>
         <p></p>
-        <pre></pre>
-        <p></p>
-        <div class="container align-center">
-            <h4>Sistema Educativo v1 Cesca</h4>
-            <p>Fué mi primer proyecto allá por el año 2018 donde a raiz de que en mi institutción educativa no se contaba
-                con un sistema que pueda mostrar las nostas ni que los profesores pudieran entregar a tiempo
-                sus registros se me ocurrió la idea de desarrollarlo.
-            </p>
-            <span>Tenologías usadas</span>
-            <h6>PHP NATIVO - MYSQL - MPDF - MATERIALIZE CSS </h6>
-            <a target="_blank" href="https://mega.nz/folder/ha4AGIaI#MBisn1JpaRklslCYyDza7g">Descargar Documentación</a>
-            <p></p>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="portafolio/esteticarosas.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block black">
+                        <h5 class="text-success">Link : <a target="_blank" href="http://esteticarosas.com">Estética Rosas</a></h5>
+                        <h5 class="text-success">Tecnologías</h5>  <p>Mobirise - Bootstrap 4 - Php - Ajax</p>
+                        <a target="_blank" href="https://mega.nz/folder/ha4AGIaI#MBisn1JpaRklslCYyDza7g">Documentación</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="portafolio/bodega.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block black">
+                    <h5 class="text-success">Link : <a target="_blank" href="#">Bodega Doris</a></h5>
+                        <h5 class="text-success">Tecnologías</h5>  <p>AdminLte 3 - Bootstrap 4 - Php - Ajax</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
+
+
+
+
+
+
+
+
+    <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
+
+
+ 
+        <p></p>
+        </div>
+
 
         <div>
             <div>
                 <!-- Filter -->
                 <!-- Gallery -->
-                <div class="mbr-gallery-row">
+                <!-- <div class="mbr-gallery-row">
                     <div class="mbr-gallery-layout-default">
                         <div>
                             <div>
@@ -322,8 +399,9 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                </div><!-- Lightbox -->
-                <div data-app-prevent-settings="" class="mbr-slider
+                </div> -->
+                <!-- Lightbox -->
+                <!-- <div data-app-prevent-settings="" class="mbr-slider
                         modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-3b">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -343,7 +421,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
