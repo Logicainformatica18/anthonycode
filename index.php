@@ -25,7 +25,15 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <script src="function.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176077455-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-176077455-1');
+</script>
 </head>
 
 <body>
@@ -192,6 +200,10 @@
    
     </center>
 
+    <p></p>
+    <h2 class="align-center mbr-fonts-style m-0 display-1">Servicios</h2>
+    <p> </p>
+
     <section class="carousel slide testimonials-slider cid-s612cC0AC5" data-interval="false" id="testimonials-slider1-3e">
 
 
@@ -250,6 +262,7 @@
 
                         </div>
                     </div>
+
                     <div class="carousel-item">
 
                         <div class="container">

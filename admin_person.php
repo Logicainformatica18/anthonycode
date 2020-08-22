@@ -16,7 +16,7 @@ include "admin_head.php";
             </div><!-- /.col -->
         </div><!-- /.row -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Agregar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Agregar</button>
     </div><!-- /.container-fluid -->
 </div>
 <!-- /.content-header -->
@@ -60,28 +60,24 @@ include "admin_head.php";
                         Sexo
 
                         <div class="container">
-                        <div class="row ">
-                        <div class="col-md-2 container">
+                            <div class="row ">
+                                <div class="col-md-2 container">
 
-                        </div>
-                            <div class="col-md-4 container">
-                                <input class="form-check-input" type="radio" name="sex" id="M" value="M">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Masculino
-                                </label>
+                                </div>
+                                <div class="col-md-4 container">
+                                    <input class="form-check-input" type="radio" name="sex" id="M" value="M">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Masculino
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-check-input" type="radio" name="sex" id="F" value="F">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Femenino
+                                    </label>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input class="form-check-input" type="radio" name="sex" id="F" value="F">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Femenino
-                                </label>
-                            </div>
                         </div>
-                        </div>
-                   
-
-
-
 
                         <br>
                         Fecha de Nacimiento :
