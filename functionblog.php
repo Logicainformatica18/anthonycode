@@ -100,9 +100,13 @@ class blog extends connection
   ?>
 <!-- Main content -->
 <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
-        <div class="container align-center">
+        <div class="container align-left">
         <div class="row">
             
+
+       
+ 
+
 
 
 
@@ -115,12 +119,15 @@ class blog extends connection
                   $title=$row[2];
                   $imageurl=$row[3];
                   $description=$row[4];
-                  echo "  <div class='card align-left' style='width: 14rem; padding-left: 1em;'>
-                            <img src='$imageurl' class='card-img-top' alt='...'>
+                  echo "   <div class='card mb-5 col-md-6 col-sm-12 col-lg-4 col-xs-12'>
+                  <a href='blog/$page.php'><img  src='$imageurl' width='200' height='100' alt='...'>
                               <div class='card-body'>
                                    <h5 class='card-title'><b>$title</b></h5>
-                                     <p class='card-text'>$description.</p>
-                                        <a href='blog/$page.php' class='btn btn-success'>Leer</a>"; 
+                                     <p class='card-text text-black'>$description.</p>
+                                     </a>
+                                      
+                                            <p class='card-text'><small class='text-muted'>Last updated 3 mins ago</small></p>
+                                        "; 
                 
                             
                       echo "  
