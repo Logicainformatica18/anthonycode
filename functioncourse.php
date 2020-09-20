@@ -130,6 +130,43 @@ class course extends connection
         </script>";
     $this->courseSelect();
   }
+
+  public function courseSelectView()
+  {
+    //consulta todos los empleados
+    $sql = mysqli_query($this->open(), "SELECT id,imageurl,description FROM course;");
+  ?>
+<!-- Main content -->
+<section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
+        <div class="container align-center">
+        <div class="row">
+               <?php
+                while ($row = mysqli_fetch_array($sql)) {
+                  $imageurl=$row[1];
+                  $description=strtoupper($row[2]);
+                  echo "   <div class='card col-md-6 col-sm-12 col-lg-4 col-xs-12 shadow p-1 mb-2 bg-white rounded'>
+                  <a href='#'><img  src='https://media.giphy.com/media/CmAKqKNZIaMdAoOkFR/giphy.gif' class=' rounded border border-warning' width='100%' height='200' alt='...'>
+                              <div class='card-body'>
+                                   <h5 class='card-title '><b>$description</b></h5>
+                                  
+                                     </a>
+                                      
+                                         
+                                        ";  
+                      echo "  
+                          </div>
+                        </div>
+                       
+                        ";
+                }
+                ?>
+       
+        </div>
+    </div>
+</section>
+<!-- /.content -->
+<?php
+  }
 }
 
 $course = new course();

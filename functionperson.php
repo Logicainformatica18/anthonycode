@@ -389,7 +389,7 @@ class person extends connection
 		$result = mysqli_query($this->open(), $query);
 		// Que la Variable $row mantenga el resultado de la consulta
 		$r = mysqli_fetch_assoc($result);
-		if ($r["email"] != "" || $r["password"] != "") {
+		if (isset($r["email"]) != "" || isset($r["password"]) != "") {
 			//comprobar el person de usuario
 			$_SESSION["id"] = $r["id"];
 			$_SESSION["login"] = $r["dni"];
@@ -400,6 +400,7 @@ class person extends connection
 			$this->personValidatePosition($r["position"]);
 		} else {
 			echo "<script>alert(' Usuario o Contraseña Incorrecta');</script>";
+			return;
 		}
 	}
 	public function personValidar()

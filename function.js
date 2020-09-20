@@ -1503,6 +1503,97 @@ function noteSelectOne(codigo) {
     });
 }
 
+function topicInsert() {
+
+    var formData = new FormData(document.getElementById("topic"));
+    // .append podemos agregar parametros al formData
+    formData.append("metodo", "insert");
+    $.ajax({
+        url: "functiontopic.php",
+        type: "POST",
+        dataType: "HTML",
+        data: formData,
+        asycn: false, //el error que cometí de sintaxis, es async
+        cache: false,
+        contentType: false,
+        processData: false
+    }).done(function (echo) {
+        $("#resultado").html(echo);
+    });
+
+}
+function topicDelete(codigo,page,course) {
+    //validamos en este if si queremos eliminar con la confirmación
+    if (confirm("¿Esta seguro de querer eliminar?")) {
+        var formData = new FormData(document.getElementById("topic"));
+        // .append podemos agregar parametros al formData
+        formData.append("metodo", "delete");
+        formData.append("codigo", codigo);
+        formData.append("page", page);
+        formData.append("course", course);
+        $.ajax({
+            url: "functiontopic.php",
+            type: "POST",
+            dataType: "HTML",
+            data: formData,
+            asycn: false, //el error que cometí de sintaxis, es async
+            cache: false,
+            contentType: false,
+            processData: false
+        }).done(function (echo) {
+            $("#resultado").html(echo);
+        });
+    }
+}
+
+function topicSelectOne(codigo) {
+    var formData = new FormData(document.getElementById("topic"));
+    // .append podemos agregar parametros al formData
+    formData.append("metodo", "select");
+    formData.append("codigo", codigo);
+    $.ajax({
+        url: "functiontopic.php",
+        type: "POST",
+        dataType: "HTML",
+        data: formData,
+        asycn: false, //el error que cometí de sintaxis, es async
+        cache: false,
+        contentType: false,
+        processData: false
+    }).done(function (echo) {
+        $("#resultado").html(echo);
+    });
+
+}
+function topicUpdate() {
+
+    var formData = new FormData(document.getElementById("topic"));
+    // .append podemos agregar parametros al formData
+    formData.append("metodo", "update");
+    $.ajax({
+        url: "functiontopic.php",
+        type: "POST",
+        dataType: "HTML",
+        data: formData,
+        //  asycn:false, //el error que cometí de sintaxis, es async
+        cache: false,
+        contentType: false,
+        processData: false
+    }).done(function (echo) {
+        $("#resultado").html(echo);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
 
 function envioWhatsapp(cliente){
 
@@ -1531,6 +1622,12 @@ function blogNuevo() {
     //limpia por completo el formulario usando jquery
     document.getElementById('post').innerHTML="";
     $("#blog")[0].reset();
+
+}
+function topicNuevo() {
+    //limpia por completo el formulario usando jquery
+    document.getElementById('post').innerHTML="";
+    $("#topic")[0].reset();
 
 }
 function generoEditar() {

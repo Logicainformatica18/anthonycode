@@ -1,3 +1,6 @@
+<?php
+include "functioncourse.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -88,6 +91,8 @@
         </div>
     </section>
     <p></p>
+
+
     <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
 
         <h2 class="align-center mbr-fonts-style m-0 display-1">
@@ -98,16 +103,9 @@
             <p class="mbr-fonts-style m-0 display-6"> Cualquier momento es perfecto para aprender algo nuevo.</p>
      
       
-            <div class="card" style="width: 18rem;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><b>Laravel</b></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">ir al Curso</a>
-            </div>
+        
         </div>
-        </div>
-
+<p></p>
 
 
         
@@ -117,7 +115,9 @@
     </section>
 
 
-
+<?php
+$course->courseSelectView();
+?>
 
 
 

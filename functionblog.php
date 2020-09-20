@@ -119,7 +119,7 @@ class blog extends connection
                   $title=$row[2];
                   $imageurl=$row[3];
                   $description=$row[4];
-                  echo "   <div class='card mb-5 col-md-6 col-sm-12 col-lg-4 col-xs-12'>
+                  echo "   <div class='card col-md-6 col-sm-12 col-lg-4 col-xs-12 shadow p-2 mb-2 bg-white rounded'>
                   <a href='blog/$page.php'><img  src='$imageurl' width='200' height='100' alt='...'>
                               <div class='card-body'>
                                    <h5 class='card-title'><b>$title</b></h5>
