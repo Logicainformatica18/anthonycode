@@ -15,6 +15,8 @@ $page = str_replace(" ", "-", $page);
 $title = isset($_POST['title']) ? $_POST['title'] : "";
 $description = isset($_POST['description']) ? $_POST['description'] : "";
 $imageurl = isset($_POST['imageurl']) ? $_POST['imageurl'] : "";
+$videourl = isset($_POST['videourl']) ? $_POST['videourl'] : "";
+$link = isset($_POST['link']) ? $_POST['link'] : "";
 $post = isset($_POST['post']) ? $_POST['post'] : "";
 //filtro
 
@@ -45,8 +47,8 @@ class topic extends connection
                                     <thead>
                                         <tr>
                                             <th>Código</th>
-                                            <th>Título</th>
-                                            <th>Descripción</th>
+                                            <th>Tema</th>
+                                            <th>Curso</th>
                                             <th>Ver topic</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
@@ -61,7 +63,7 @@ class topic extends connection
                                             $page = str_replace("#", "sharp", $page);
                                             echo "<td>" .  $topicid . "</td>";
                                             echo "<td>" . $row[1] . "</td>";
-                                            echo "<td>" . $row[3] . "</td>";
+                                            echo "<td>" . $row[4] . "</td>";
                                             $course=$row["course"];
                                             $course = str_replace(" ", "-", $course);
                                             $course = str_replace("#", "sharp", $course);
@@ -99,13 +101,11 @@ class topic extends connection
         <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
             <div class="container align-left">
                 <div class="row">
-
-
                     <?php
 
                     while ($row = mysqli_fetch_array($sql)) {
                         $page = str_replace(" ", "-", $row[1]);
-                        $page = str_replace("#", "sharp", $row[1]);
+                        $page = str_replace("#", "sharp", $page);
                         $title = $row[2];
                         $imageurl = $row[3];
                         $description = $row[4];
@@ -147,8 +147,9 @@ class topic extends connection
         }
         $this->topicSelect();
     }
-    public function topicInsert($courseid, $title, $post, $imageurl, $description)
+    public function topicInsert($courseid, $title, $post, $imageurl, $description,$link,$videourl)
     {
+        $videourl= str_replace("watch?v=","embed/",$videourl);
         // reemplazar espacion por guiones del title
         $page = str_replace(" ", "-", $title);
         $page = str_replace("#", "sharp", $page);
@@ -156,42 +157,38 @@ class topic extends connection
         $post = str_replace('"', "'", $post);
         $post = '"' . $post . '"';
         //registra los datos del topic
-        $sql = "INSERT INTO topic (courseid,title,post,page,description,imageurl,created_at,updated_at) VALUES ('$courseid','$title',$post,'$page','$description','$imageurl',now(),now())";
+        $sql = "INSERT INTO topic (courseid,title,post,page,description,imageurl,created_at,updated_at,link,videourl) VALUES ('$courseid','$title',$post,'$page','$description','$imageurl',now(),now(),'$link','$videourl')";
         if (mysqli_query($this->open(), $sql)) {
-            $title_post = "<!DOCTYPE html>
+           
+            $videourl="<iframe width='100%' height='415' src='$videourl' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><p></p>";
+            $title_post = "<!DOCTYPE html';
       <html>
       <head>
           <meta charset='UTF-8'>
           <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-          <meta name='generator' content='Mobirise v4.12.4, mobirise.com'>
           <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1'>
           <title>$title</title>";
             $php1 = "<?php include ('../head.php') ?>";
             $php2 = "<?php include ('../footer.php') ?>";
-
-            $facebook_comment = "<div id='fb-root'></div>
-<script async defer crossorigin='anonymous' src='https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0'
-    nonce='R392LXB9'></script>
-<div class='fb-comments' data-href='$page.php' data-numposts='5' data-width='100%'></div>";
-
+            if($link!=""){
+                $link="<a target='_blank'href='$link' style='color:gold;background-color:black' class='btn btn-sm'>
+                Dale click para descargar
+              </a>";
+            }
+          
             $disquis = "<div id='disqus_thread'></div>
 <script>
-
-
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://logicainformatica.disqus.com/embed.js';
+s.src = 'https://anthonycode-com.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>";
-            $facebook_compartir = "<div class='fb-like' data-href='$page.php' data-width='' data-layout='button_count'
-    data-action='like' data-size='small' data-share='true'></div>";
-
+           
             $post = str_replace('"', "", $post);
-            $contenido = $title_post . $php1 . "<h1 class='title_post'>$title</h1>$facebook_compartir <p>$post</p>$disquis" . $php2;
-
+            $contenido = $title_post . $php1 . "$videourl<h1 class='text display-5'>$title</h1>$link <p></p> $disquis" . $php2;
             $query = mysqli_query($this->open(), "SELECT description from course where id='$courseid'");
             $r = mysqli_fetch_assoc($query);
             $directorio = $r["description"];
@@ -225,27 +222,27 @@ alert('Registrado Correctamente');
         $post = $r["post"];
         $imageurl = $r["imageurl"];
         $description = $r["description"];
+        $videourl=$r["videourl"];
     ?>
         <script>
             topic.codigo.value = "<?php echo $codigo ?>";
             topic.title.value = "<?php echo $title ?>";
             topic.imageurl.value = "<?php echo $imageurl ?>";
             topic.description.value = "<?php echo $description ?>";
-            document.getElementById('post').innerHTML = "<?php echo $post ?>";
+            topic.videourl.value="<?php echo $videourl ?>";
         </script>
 
 <?php
         $this->topicSelect();
     }
 
-    public function topicUpdate($codigo, $title, $post, $imageurl, $description)
+    public function topicUpdate($codigo, $title, $post, $imageurl, $description,$link,$videourl)
     {
-        $sql = "UPDATE topic set title='$title',post='$post',imageurl='$imageurl',description='$description' where id='$codigo'";
+        $sql = "UPDATE topic set title='$title',post='$post',imageurl='$imageurl',description='$description',videourl='$videourl', link='$link' where id='$codigo'";
         mysqli_query($this->open(), $sql) or die('Error. ' . mysqli_error($sql));
         echo "<script>
 topic.codigo.value = '$codigo';
 topic.title.value = '$title';
-document.getElementById('post').innerHTML='$post';
 </script>";
 
         //rename("topic/$title.php",);
@@ -257,11 +254,11 @@ $topic = new topic();
 if ($metodo == "delete") {
     $topic->topicDelete($codigo, $page,$course);
 } elseif ($metodo == "insert") {
-    $topic->topicInsert($courseid, $title, $post, $imageurl, $description);
+    $topic->topicInsert($courseid, $title, $post, $imageurl, $description,$link,$videourl);
 } elseif ($metodo == "select") {
     $topic->topicSelectOne($codigo);
 } elseif ($metodo == "update") {
-    $topic->topicUpdate($codigo, $title, $post, $imageurl, $description);
+    $topic->topicUpdate($codigo, $title, $post, $imageurl, $description,$link,$videourl);
 }
 /**
  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.

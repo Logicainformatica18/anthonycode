@@ -77,9 +77,15 @@ include "functiontopic.php";
                         <input class="form-control" name="imageurl" placeholder="Imagen Url">
                     </div>
                     <div class="form-group">
+                        <input class="form-control" name="link" placeholder="Link material">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="videourl" placeholder="Video Url">
+                    </div>
+                    <!-- <div class="form-group">
                         <textarea name="post" id="compose-textarea" class="form-control">
 
-                    </textarea>
+                    </textarea> -->
 
                     </div>
                     <!-- <div class="form-group">
