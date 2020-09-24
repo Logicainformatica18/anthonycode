@@ -195,7 +195,7 @@ file_put_contents($directorio ."/". "index.php", $contenido);
     //consulta todos los empleados
     $sql = mysqli_query(
       $this->open(),
-      "SELECT c.id,c.photo,c.description FROM course c inner join topic t on c.id=t.courseid order by c.created_at DESC;"
+      "SELECT c.id,c.photo,c.description FROM course c inner join topic t on c.id=t.courseid group by c.id order by c.created_at DESC;"
     );
   ?>
     <!-- Main content -->
