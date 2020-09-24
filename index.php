@@ -112,7 +112,7 @@
     <div class="row container" >
 
         <div class="col col-lg-2 col-md-3 col-12">
-            <div class="card" style="width: 13rem;">
+            <div class="card" style="width: 8rem;">
                 <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
