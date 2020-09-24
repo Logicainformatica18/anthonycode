@@ -253,24 +253,25 @@ file_put_contents($directorio ."/". "index.php", $contenido);
               if ($photo == "") {
                 $photo = "https://concepto.de/wp-content/uploads/2015/08/informatica-1-e1590711788135.jpg";
               } 
-              $title = strtoupper($row[2]); 
+              $title = $row[2]; 
               $description=$row[3];    
                           echo "<div class='card mb-2  shadow p-1 mb-2 bg-white rounded  border border-warning'width='100%' >
-                              <div class='row no-gutters'>
-                                  <div class='col col-sm-12 col-md-12 col-lg-2'>
-                                 <a href='$page.php'><img src='$photo' width='100%' class='p-4'  alt='...'>
-                                  </div>
-                                  <div class='col col-sm-12 col-md-12 col-lg-8'>
-                                      <div class='card-body'>
-                                          <p class='card-title'>$title</p>
-                                          <p class='card-text'>$description</p>
+                                    <div class='row'>
+                                      <div class='col-sm-12 col-md-12 col-lg-3'>
+                                        <a href='$page.php'><img src='$photo' width='100%' class='p-1'  alt='...'>
+                                       </div>
+                                    
+                                      <div class='col-sm-12 col-md-12'>
+                                      <p style='color:red' class='card-title display-5 mt-3 pl-1'>$title</p>
+                                         
+                                          <p class=''>$description</p>
+                                      
                                       </div>
-                                  </div>
-                                  </a>
+                                        </a>
                             ";
                           echo "  
-                          </div>
-                        </div>";
+                                    </div>
+                                  </div>";
 
       
             }

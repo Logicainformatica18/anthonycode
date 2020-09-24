@@ -76,7 +76,6 @@
 <script src="../../assets/smoothscroll/smooth-scroll.js"></script>
 <script src="../../assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
 <script src="../../assets/theme/js/script.js"></script>
-<script src="../../"></script>
 
 
 </body>
