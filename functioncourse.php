@@ -215,7 +215,7 @@ file_put_contents($directorio ."/". "index.php", $contenido);
             }
             $description = strtoupper($row[2]);
             echo "   <div class='card col-md-6 col-sm-12 col-lg-4 col-xs-12 shadow p-1 mb-2 bg-white rounded'>
-                  <a href='cursos/$page'><img  src='$photo' class=' rounded border border-warning' width='100%' height='200' alt='...'>
+                  <a href='cursos/$page'><img  src='$photo' class=' rounded border border-warning' width='80%' height='200' alt='...'>
                               <div class='card-body'>
                                    <h5 class='card-title '><b>$description</b></h5>
                                      </a>";
