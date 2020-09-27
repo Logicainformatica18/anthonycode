@@ -25,15 +25,18 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <script src="function.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176077455-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176077455-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-176077455-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176077455-1');
+    </script>
 </head>
 
 <body>
@@ -75,134 +78,168 @@
         </nav>
     </section>
 
+    <!-- Image and text -->
+    <nav class="navbar navbar bg-black" style="background-color:black;height:75px">
 
-    <section class="mbr-section info3 cid-s7ksMnJa7N" id="info3-3g">
 
+    </nav>
 
+    <pre style="background-color:white">
+</pre>
+    <h2 class="align-center mbr-fonts-style m-0 display-2">Anthony Cardenas Aquino</h2>
 
-        <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);">
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="media-container-column title col-12 col-md-10">
-                    <!-- <h2 class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
-                    BACKGROUND IMAGE
-                </h2> -->
-                    <!-- <h3 class="mbr-section-subtitle align-left mbr-light mbr-white pb-3 mbr-fonts-style display-5">
-                    Shape your future web project with sharp design and refine coded functions
-                </h3>
-                <p class="mbr-text align-left mbr-white mbr-fonts-style display-7">
-                    Background image with solid color overlay and parallax effect. Develop fully responsive, mobile-ready websites that look amazing on any devices and browsers
-                </p> -->
-                    <!-- <div class="mbr-section-btn align-left py-4">
-                    <a class="btn btn-primary display-4" href="https://mobiri.se">LEARN MORE</a>
-                    <a class="btn btn-white-outline display-4" href="https://mobiri.se">LIVE DEMO</a>
-                </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
 
     <p></p>
-    <h2 class="align-center mbr-fonts-style m-0 display-1">¿Quién soy?</h2>
-    <p> </p>
-
     <center>
-    <div class="row container" >
+        <div class="row container">
 
-        <div class="col col-lg-2 col-md-3 col-12">
-            <div class="card" style="width: 8rem;">
-                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
-                    <span class="badge badge-warning">Programador web</span>
-                    <span class="badge badge-success">Docente</span>
-                    <div class="container text-center">
-                        <a target="_blank" href="https://github.com/Logicainformatica18">
-                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" width="20px">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/anthony-robert-cardenas-aquino-01a645141/">
-                            <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="" width="20px">
-                        </a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UC13FlAy_27IpJfowhoo73Gg">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png" alt="" width="25px">
-                        </a>
+            <div class="col-lg-4 col-md-3 col-12 col-sm-12">
+                <div class="card" style="width: 100%;">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" width="40%" alt="...">
+                    <div class="card-body">
+
+                        <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
+                        <span class="badge badge-warning">Programador web</span>
+                        <span class="badge badge-success">Docente</span>
+                        <div class="container text-center">
+                            <a target="_blank" href="https://github.com/Logicainformatica18">
+                                <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" width="20px">
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/anthony-robert-cardenas-aquino-01a645141/">
+                                <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="" width="20px">
+                            </a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UC13FlAy_27IpJfowhoo73Gg">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png" alt="" width="25px">
+                            </a>
+                        </div>
+                        <p class="card-text text-justify">
+                            Soy programador web y docente con 3 años de experiencia enseñando cursos de nivel superior en carreras profesionales como Computación e informática.
+                        </p>
+
                     </div>
-                    <p class="card-text text-justify">Autodidacta con más de 3 años de experiencia.</p>
-
                 </div>
             </div>
+
+            <div class="col col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col col-lg-7 col-md-8 col-12">
+                <h5>Technological Skills</h5>
+                <style>
+                    .red {
+                        background-color: red;
+                    }
+
+                    .orange {
+                        background-color: rgb(255, 153, 0);
+                    }
+
+                    .green {
+                        background-color: green;
+                    }
+
+                    .violet {
+                        background-color: blueviolet;
+                    }
+
+                    .blue {
+                        background-color: blue;
+                    }
+
+                    .black {
+                        background-color: black;
+                    }
+                </style>
+                Html5
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">97%</div>
+                </div>
+                Css3
+                <div class="progress">
+                    <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                JavaScript Vanilla js
+                <div class="progress">
+                    <div class="progress-bar orange progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                Svc Git
+                <div class="progress">
+                    <div class="progress-bar violet progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                Php Poo
+                <div class="progress">
+                    <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
+                </div>
+                Laravel 6
+                <div class="progress">
+                    <div class="progress-bar green progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                React Js
+                <div class="progress">
+                    <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                </div>
+                Mysql - Sql
+                <div class="progress">
+                    <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+
+            </div>
         </div>
-       
-        <div class="col col-lg-1 col-md-1 col-sm-1"></div>
-        <div class="col col-lg-9 col-md-8 col-12">
-            <h5>Technological Skills</h5>
-            <style>
-                .red {
-                    background-color: red;
-                }
 
-                .orange {
-                    background-color: rgb(255, 153, 0);
-                }
-
-                .green {
-                    background-color: green;
-                }
-
-                .violet {
-                    background-color: blueviolet;
-                }
-
-                .blue {
-                    background-color: blue;
-                }
-                .black{
-                    background-color: black;
-                }
-            </style>
-            Html5
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">97%</div>
-            </div>
-            Css3
-            <div class="progress">
-                <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-            </div>
-            JavaScript Vanilla js
-            <div class="progress">
-                <div class="progress-bar orange progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-            </div>
-            Svc Git
-            <div class="progress">
-                <div class="progress-bar violet progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            </div>
-            Php Poo
-            <div class="progress">
-                <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
-            </div>
-            Laravel 6
-            <div class="progress">
-                <div class="progress-bar green progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            </div>
-            React Js
-            <div class="progress">
-                <div class="progress-bar  progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
-            </div>
-            Mysql - Sql
-            <div class="progress">
-                <div class="progress-bar red progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-            </div>
-
-        </div>
-    </div>
-   
     </center>
 
-    <p></p>
-    <h2 class="align-center mbr-fonts-style m-0 display-1">Servicios</h2>
-    <p> </p>
+
+
+
+
+
+
+
+
+
+
+    <pre style="background-color:white">
+</pre>
+    <h2 class="align-center mbr-fonts-style m-0 display-2">
+        Portafolio</h2>
+
+    <pre style="background-color:white">
+</pre>
+
+    <div class="row container-fluid">
+        <div class="col-sm-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <a target="_blank" href="http://esteticarosas.com">
+                    <img src="portafolio/esteticarosas.png" class="card-img-top" alt="...">
+                    </a>
+                 <div class="card-body">
+                 <p class="card-title"style="color:violet"><b>Estética Rosas</b></p>
+                        <p class="card-text">Bootstrap - Php - Html - Css .</p>
+                   
+                 
+                 </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <a target="_blank" href="#">
+                    <img src="portafolio/bodega.png" class="card-img-top" alt="...">
+                </a>
+                    <div class="card-body">
+                 <p class="card-title" style="color:violet"><b>Bodega Doris</b></p>
+                        <p class="card-text">Bootstrap - Php - Html -  Mysql .</p>
+                   
+                 
+                 </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <img src="imagenes/servicios/afiche-programacion.jpg"width="100%" alt="" srcset="">
+
+  
 
     <section class="carousel slide testimonials-slider cid-s612cC0AC5" data-interval="false" id="testimonials-slider1-3e">
 
@@ -223,13 +260,13 @@
                                     <div class="section-title">
                                         <div class="resume-item">
                                             <h4 style="color:rgb(255, 153,
-                                                    0);">Computación e
+                                            0);">Computación e
                                                 Informática</h4>
                                             <p>2016 - 2018</p>
                                             <p><em>Instituto Tecnológico,
                                                     Cesca</em></p>
                                             <h4 style="color:rgb(255, 153,
-                                                    0);">Inglés Básico</h4>
+                                            0);">Inglés Básico</h4>
                                             <p>2019 - 2020</p>
                                             <p><em>CICEX</em></p>
                                         </div>
@@ -300,13 +337,13 @@
                     <div class="carousel-controls">
                         <a class="carousel-control-prev" role="button" data-slide="prev">
                             <span aria-hidden="true" class="mbri-arrow-prev
-                                    mbr-iconfont"></span>
+                            mbr-iconfont"></span>
                             <span class="sr-only">Previous</span>
                         </a>
 
                         <a class="carousel-control-next" role="button" data-slide="next">
                             <span aria-hidden="true" class="mbri-arrow-next
-                                    mbr-iconfont"></span>
+                            mbr-iconfont"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
@@ -318,55 +355,10 @@
 
 
 
-
-
-    <p></p>
-        <h2 class="align-center mbr-fonts-style m-0 display-1">
-            Portafolio</h2>
-        <p></p>
-
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="portafolio/esteticarosas.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block black">
-                        <h5 class="text-success">Link : <a target="_blank" href="http://esteticarosas.com">Estética Rosas</a></h5>
-                        <h5 class="text-success">Tecnologías</h5>  <p>Mobirise - Bootstrap 4 - Php - Ajax</p>
-                        <a target="_blank" href="https://mega.nz/folder/ha4AGIaI#MBisn1JpaRklslCYyDza7g">Documentación</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="portafolio/bodega.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block black">
-                    <h5 class="text-success">Link : <a target="_blank" href="#">Bodega Doris</a></h5>
-                        <h5 class="text-success">Tecnologías</h5>  <p>AdminLte 3 - Bootstrap 4 - Php - Ajax</p>
-                    </div>
-                </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-
-
-
-
-
-
-
-
     <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
 
 
- 
+
         <p></p>
         </div>
 
@@ -455,8 +447,8 @@
                 <!--Titles-->
                 <div class="title col-12">
                     <h2 class="align-center mbr-fonts-style m-0
-                            display-1">
-                        Publicaciones</h2>
+                            display-2">
+                        Posts</h2>
                     <p></p>
 
                 </div>
@@ -547,8 +539,18 @@
             </div>
         </div>
     </section>
+    <section class="cid-sbOKN4xtGS" id="video2-3j">
 
-    <section once="footers" class="cid-s7kpmGA6pD" id="footer7-3f">
+
+
+        <figure class="mbr-figure align-center">
+            <div class="video-block" style="width: 100%;">
+                <div><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/X-gVHwrELFU?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="720" height="300" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+        </figure>
+    </section>
+
+    <section once="footers" style="background-color:black;" class="cid-s7kpmGA6pD" id="footer7-3f">
 
 
 
