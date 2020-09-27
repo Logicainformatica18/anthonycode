@@ -91,7 +91,7 @@ include "functionblog.php";
 
     <p></p>
     <h2 class="align-center mbr-fonts-style m-0
-                                display-1">
+                                display-2">
         Blog</h2>
     <p></p>
 

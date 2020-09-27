@@ -95,7 +95,7 @@ include "functioncourse.php";
 
     <section class="mbr-gallery mbr-slider-carousel cid-s611dDivHx" id="gallery3-3b">
 
-        <h2 class="align-center mbr-fonts-style m-0 display-1">
+        <h2 class="align-center mbr-fonts-style m-0 display-2">
             Cursos</h2>
         <p></p>
 
