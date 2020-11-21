@@ -95,7 +95,7 @@
 
             <div class="col-lg-4 col-md-3 col-12 col-sm-12">
                 <div class="card" style="width: 60%;">
-                    <img src="https://scontent.flim10-1.fna.fbcdn.net/v/t1.0-9/121160480_182124630168199_3734702353290483931_n.jpg?_nc_cat=102&ccb=2&_nc_sid=730e14&_nc_eui2=AeF1F-HuSo1kMhMCFLWDHUH4-Py1yo31olH4_LXKjfWiUbsVuNmF8VMtjekKVe9R6ASaDhUsMNv2sxlnE4AcSl5t&_nc_ohc=I5zDQCQgoV4AX-gtm1_&_nc_ht=scontent.flim10-1.fna&oh=4a7317a875a0cb4a220af9762478fe76&oe=5FDF2DFC" width="100%" alt="...">
+                    <img src="imagenes/perfil.png" width="100%" alt="..." class="mt-5">
                     <div class="card-body">
 
                         <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
