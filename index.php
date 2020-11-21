@@ -94,8 +94,8 @@
         <div class="row container">
 
             <div class="col-lg-4 col-md-3 col-12 col-sm-12">
-                <div class="card" style="width: 100%;">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG6n4qHW4uqbw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=x-Chl2uMIlLzVONga-574XhUew-Q7FSxeLMqgs3JiDI" width="40%" alt="...">
+                <div class="card" style="width: 60%;">
+                    <img src="https://scontent.flim10-1.fna.fbcdn.net/v/t1.0-9/121160480_182124630168199_3734702353290483931_n.jpg?_nc_cat=102&ccb=2&_nc_sid=730e14&_nc_eui2=AeF1F-HuSo1kMhMCFLWDHUH4-Py1yo31olH4_LXKjfWiUbsVuNmF8VMtjekKVe9R6ASaDhUsMNv2sxlnE4AcSl5t&_nc_ohc=I5zDQCQgoV4AX-gtm1_&_nc_ht=scontent.flim10-1.fna&oh=4a7317a875a0cb4a220af9762478fe76&oe=5FDF2DFC" width="100%" alt="...">
                     <div class="card-body">
 
                         <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
