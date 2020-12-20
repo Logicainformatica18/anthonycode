@@ -95,7 +95,7 @@
 
             <div class="col-lg-4 col-md-3 col-12 col-sm-12">
                 <div class="card" style="width: 60%;">
-                    <img src="imagenes/perfil.png" width="100%" alt="..." class="mt-5">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHA1Cs4DRY8zg/profile-displayphoto-shrink_200_200/0/1608449437047?e=1614211200&v=beta&t=qk6ZOEnfBwTfeIMpO-ML-km-XmtOBcmvfhxMf8t5IMw" width="100%" alt="..." class="mt-5">
                     <div class="card-body">
 
                         <h6 class="card-title text-center">Anthony Cardenas Aquino</h6>
